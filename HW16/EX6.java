@@ -6,10 +6,10 @@ public class EX6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int weight = 0;
-        System.out.println("Введите максимальный вес меттала для хранения на складе:");
+        System.out.println("Введите максимальный вес металла для хранения на складе:");
         int maxWeight = input.nextInt();
         while (weight <= maxWeight) {
-                System.out.println("Сколько веса металла собираетесь сдать?");
+                System.out.println("Сколько веса металла хотите сдать?");
             int weightOfMetal = input.nextInt();
             weight = weight + weightOfMetal;
                 if (weight == maxWeight) {
