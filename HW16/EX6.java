@@ -6,13 +6,25 @@ public class EX6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int weight = 0;
-        while (weight>=100) {
-            System.out.println("Введите максимальный вес меттала для хранения на складе:");
+        System.out.println("Введите максимальный вес меттала для хранения на складе:");
+        int maxWeight = input.nextInt();
+        while (weight <= maxWeight) {
+                System.out.println("Сколько веса металла собираетесь сдать?");
             int weightOfMetal = input.nextInt();
-            System.out.println("Сколько веса металла собираетесь сдать?");
-            int maxWeigh = input.nextInt();
-            weight += weightOfMetal;
-            System.out.println("Осталось места на складе "+(maxWeigh - weight));
+            weight = weight + weightOfMetal;
+                if (weight == maxWeight) {
+                   break;
+                     }
+                      if (weightOfMetal < 5) {
+                        System.out.println("Невозможно принять минимальный вес металла");
+                           continue;
+                             }
+                                if (weight > maxWeight) {
+                                    System.out.println("На складе не осталось свободного места");
+                                       System.out.println("Осталось места на складе " + (maxWeight - weight));
+                                          continue;
+                                           }
+                               System.out.println("Осталось места на складе " + (maxWeight - weight));
         }
     }
 }
