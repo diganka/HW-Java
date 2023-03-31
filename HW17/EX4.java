@@ -17,9 +17,9 @@ public class EX4 {
             array[i] = (int) (Math.random() * 100);
         }
         System.out.println("Изначальный массив: " + Arrays.toString(array));
-        Arrays.sort(array, 0, size / 2); // сортировка первой половины по возрастанию
-        Arrays.sort(array, size / 2, size); // сортировка второй половины по убыванию
-        for (int i = 0; i < size / 2 / 2; i++) { // обмен элементов второй половины в обратном порядке
+        Arrays.sort(array, 0, size / 2);
+        Arrays.sort(array, size / 2, size);
+        for (int i = 0; i < size / 2 / 2; i++) {
             int temp = array[size / 2 + i];
             array[size / 2 + i] = array[size - 1 - i];
             array[size - 1 - i] = temp;
