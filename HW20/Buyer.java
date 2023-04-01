@@ -12,7 +12,6 @@ public class Buyer extends Person  {
             return hasDiscountCard;
         }
 
-        @Override
         public void role() {
             System.out.println("Я покупатель");
         }

@@ -16,7 +16,6 @@ public class Seller extends Person {
             honest = honest1;
         }
 
-        @Override
         public void role() {
             System.out.println("Я продавец");
         }

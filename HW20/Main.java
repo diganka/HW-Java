@@ -5,6 +5,6 @@ public class Main {
             Shop shop = new Shop("Теремок");
             Seller seller = new Seller("Артем", 28, true);
             Buyer buyer = new Buyer("Денис", 18, true);
-            shop.returnCost("виски \"Jack Danial's\"", 679, seller, buyer);
+            shop.returnCost("alcohol wiskey \"Jack Danial's\"", 679, seller, buyer);
         }
 }
